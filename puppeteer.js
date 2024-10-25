@@ -34,7 +34,7 @@ class StealthBrowser {
 
     async init() {
         this.browser = await puppeteerExtra.launch({
-            // headless: 'new',
+            headless: 'new',
             args: [...configuration],
         });
     }
