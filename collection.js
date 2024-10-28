@@ -1,5 +1,6 @@
 import fs from 'fs'
 import csv from "csv-parser"
+import { Parser } from 'json2csv';
 
 const start = 2015;
 const end = 2024;
@@ -92,13 +93,15 @@ async function readMultipleCSVFiles(filePaths) {
 }
 
 readMultipleCSVFiles().then((results) => {
-    let match_cnt = 0;
-    for (let i = 0; i < results.length; i++) {
-        results[i]["res"] = results[i]['FTHG'] > results[i]['FTAG'] ? 'H' : results[i]['FTHG'] < results[i]['FTAG'] ? 'A' : 'D';
-        results[i]["pred"] = (results[i]['ODDS1'] < results[i]['ODDS2'] && results[i]['ODDS1'] < results[i]['ODDSX']) ? 'H' : (results[i]['ODDS2'] < results[i]['ODDS1'] && results[i]['ODDS2'] < results[i]['ODDSX']) ? 'A' : 'D';
-        if (results[i].res == results[i].pred)
-            match_cnt++;
-    }
-    // console.table(results);
-    console.log(match_cnt, results.length, match_cnt / results.length);
+    const json2csvParser = new Parser();
+    const csvData = json2csvParser.parse(results);
+
+    // Write merged data to output CSV file
+    fs.writeFile("combined_data.csv", csvData, (error) => {
+        if (error) {
+            console.error('Error writing output file:', error);
+        } else {
+            console.log(`Data has been written to combined_data.csv`);
+        }
+    });
 }).catch((error) => console.error("Error processing files:", error));
