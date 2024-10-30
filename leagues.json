@@ -1,0 +1,154 @@
+[
+  {
+    "type": "football",
+    "region": "europe",
+    "league": "champions-league"
+  },
+  {
+    "type": "football",
+    "region": "europe",
+    "league": "europa-league"
+  },
+  {
+    "type": "football",
+    "region": "england",
+    "league": "premier-league"
+  },
+  {
+    "type": "football",
+    "region": "france",
+    "league": "ligue-1"
+  },
+  {
+    "type": "football",
+    "region": "italy",
+    "league": "serie-a"
+  },
+  {
+    "type": "football",
+    "region": "germany",
+    "league": "bundesliga"
+  },
+  {
+    "type": "football",
+    "region": "spain",
+    "league": "laliga"
+  },
+  {
+    "type": "football",
+    "region": "netherlands",
+    "league": "eredivisie"
+  },
+  {
+    "type": "football",
+    "region": "greece",
+    "league": "super-league"
+  },
+  {
+    "type": "football",
+    "region": "turkey",
+    "league": "super-lig"
+  },
+  {
+    "type": "football",
+    "region": "scotland",
+    "league": "premiership"
+  },
+  {
+    "type": "football",
+    "region": "belgium",
+    "league": "jupiler-pro-league"
+  },
+  {
+    "type": "football",
+    "region": "belgium",
+    "league": "jupiler-league"
+  },
+  {
+    "type": "football",
+    "region": "portugal",
+    "league": "liga-portugal"
+  },
+  {
+    "type": "football",
+    "region": "portugal",
+    "league": "primeira-liga"
+  },
+  {
+    "type": "basketball",
+    "region": "europe",
+    "league": "euroleague"
+  },
+  {
+    "type": "basketball",
+    "region": "usa",
+    "league": "nba"
+  },
+  {
+    "type": "basketball",
+    "region": "europe",
+    "league": "champions-league"
+  },
+  {
+    "type": "basketball",
+    "region": "europe",
+    "league": "fiba-europe-cup"
+  },
+  {
+    "type": "basketball",
+    "region": "australia",
+    "league": "nbl"
+  },
+  {
+    "type": "basketball",
+    "region": "argentina",
+    "league": "liga-a"
+  },
+  {
+    "type": "basketball",
+    "region": "france",
+    "league": "pro-b"
+  },
+  {
+    "type": "basketball",
+    "region": "brazil",
+    "league": "nbb"
+  },
+  {
+    "type": "american-football",
+    "region": "usa",
+    "league": "nfl"
+  },
+  {
+    "type": "american-football",
+    "region": "usa",
+    "league": "ncaa"
+  },
+  {
+    "type": "baseball",
+    "region": "japan",
+    "league": "npb",
+    "season_type": 1
+  },
+  {
+    "type": "baseball",
+    "region": "mexico",
+    "league": "lmp"
+  },
+  {
+    "type": "baseball",
+    "region": "usa",
+    "league": "mlb",
+    "season_type": 1
+  },
+  {
+    "type": "baseball",
+    "region": "venezuela",
+    "league": "lvbp"
+  },
+  {
+    "type": "baseball",
+    "region": "dominican-republic",
+    "league": "lidom"
+  }
+]

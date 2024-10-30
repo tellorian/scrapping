@@ -12,13 +12,12 @@ const run = async () => {
         const data = [];
         els.map((el) => {
             let ps = el.parentElement.querySelectorAll("p");
-            if ((ps.length == 8 && ps[1].innerText.trim() == "postp.") || ps.length > 8) return
+            if ((ps.length == 8 && ps[1].textContent == "postp.") || ps.length > 8) return
             const sub_el = el.querySelector("div:nth-child(1)").querySelector("div:nth-child(2)").querySelector("div:nth-child(1)").querySelector("div:nth-child(1)");
-            const goals = sub_el.children.length >= 2 ? sub_el.children[1].querySelector("div:nth-child(1)")
-                .querySelectorAll("div") : [];
-            data.push(ps[0].innerText.trim() + "," + ps[ps.length > 6 ? 2 : 1].innerText.trim() + "," + ps[ps.length > 6 ? 3 : 2].innerText.trim() +
-                "," + (goals.length > 1 ? goals[0].innerText.trim() : "-1") + "," + (goals.length > 1 ? goals[1].innerText.trim() : "-1") +
-                "," + ps[ps.length > 6 ? 5 : 3].innerText.trim() + "," + ps[ps.length > 6 ? 6 : 4].innerText.trim() + "," + ps[ps.length > 6 ? 7 : 5].innerText.trim())
+            const goals = sub_el.children.length >= 2 ? sub_el.children[1].querySelector("div:nth-child(1)").querySelectorAll("div") : [];
+            data.push(ps[0].textContent + "," + ps[ps.length > 6 ? 2 : 1].textContent + "," + ps[ps.length > 6 ? 3 : 2].textContent +
+                "," + (goals.length > 1 ? goals[0].textContent : "-1") + "," + (goals.length > 1 ? goals[1].textContent : "-1") +
+                "," + ps[ps.length > 6 ? 5 : 3].textContent + "," + ps[ps.length > 6 ? 6 : 4].textContent + "," + ps[ps.length > 6 ? 7 : 5].textContent)
 
         });
         return data;
